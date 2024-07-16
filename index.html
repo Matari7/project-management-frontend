@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Project Management Platform</h1>
+
+    <div id="auth-service" class="service">
+        <h2>Auth Service</h2>
+        <input type="text" id="auth-username" placeholder="Username">
+        <input type="password" id="auth-password" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <pre id="auth-response"></pre>
+    </div>
+
+    <div id="user-service" class="service">
+        <h2>User Service</h2>
+        <ul id="user-list"></ul>
+    </div>
+
+    <div id="document-service" class="service">
+        <h2>Document Service</h2>
+        <ul id="document-list"></ul>
+    </div>
+
+    <div id="project-service" class="service">
+        <h2>Project Service</h2>
+        <ul id="project-list"></ul>
+    </div>
+
+    <div id="task-service" class="service">
+        <h2>Task Service</h2>
+        <ul id="task-list"></ul>
+    </div>
+
+    <div id="collab-service" class="service">
+        <h2>Collaboration Service</h2>
+        <input type="text" id="collab-username" placeholder="Username">
+        <input type="text" id="collab-message" placeholder="Message">
+        <button onclick="sendMessage()">Send Message</button>
+        <ul id="message-list"></ul>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
